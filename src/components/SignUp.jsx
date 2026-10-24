@@ -1,19 +1,16 @@
 import React from 'react';
 import styles from './SignUp.module.css';
-import googleIcon from '../assets/icons-google-logo.svg';
-import appleIcon from '../assets/icons-apple-logo.svg';
-import blossomImg from '../assets/blossom-flower.svg';
+import googleIcon from "/src/assets/icons-google-logo.svg";
+import appleIcon from "/src/assets/icons-apple-logo.svg";
+import blossomImg from "/src/assets/blossom-flower.svg";
 
 export default function SignUp() {
   return (
     <div className={styles.container}>
-      {/* Left Section */}
       <div className={styles.leftSection}>
         <div className={styles.formContainer}>
-          {/* Part 1: Title */}
           <h1 className={styles.title}>Get Started Now</h1>
 
-          {/* Part 2: Form */}
           <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
             <div className={styles.inputGroup}>
               <label htmlFor="name">Name</label>
@@ -42,7 +39,6 @@ export default function SignUp() {
             </button>
           </form>
 
-          {/* Part 3: Bottom Section & Social Sign-In */}
           <div className={styles.divider}>
             <span>Or</span>
           </div>
@@ -64,7 +60,6 @@ export default function SignUp() {
         </div>
       </div>
 
-      {/* Right Section */}
       <div className={styles.rightSection}>
         <img src={blossomImg} alt="Blossom Flower" className={styles.blossomImg} />
       </div>
