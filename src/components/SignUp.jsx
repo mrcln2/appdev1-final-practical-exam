@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from './SignUp.module.css';
-import googleIcon from "/src/assets/icons-google-logo.svg";
-import appleIcon from "/src/assets/icons-apple-logo.svg";
-import blossomImg from "/src/assets/blossom-flower.svg";
+import googleIcon from '../assets/icons-google-logo.svg';
+import appleIcon from '../assets/icons-apple-logo.svg';
+import blossomImg from '../assets/blossom-flower.svg';
+import { Input } from "@/components/ui/input";
 
 export default function SignUp() {
   return (
@@ -14,17 +15,17 @@ export default function SignUp() {
           <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
             <div className={styles.inputGroup}>
               <label htmlFor="name">Name</label>
-              <input type="text" id="name" placeholder="Enter your name" />
+              <Input type="text" id="name" placeholder="Enter your name" />
             </div>
 
             <div className={styles.inputGroup}>
               <label htmlFor="email">Email address</label>
-              <input type="email" id="email" placeholder="Enter your email" />
+              <Input type="email" id="email" placeholder="Enter your email" />
             </div>
 
             <div className={styles.inputGroup}>
               <label htmlFor="password">Password</label>
-              <input type="password" id="password" placeholder="Name" />
+              <Input type="password" id="password" placeholder="Name" />
             </div>
 
             <div className={styles.checkboxGroup}>

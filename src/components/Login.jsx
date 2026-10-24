@@ -3,6 +3,7 @@ import styles from './Login.module.css';
 import googleIcon from '../assets/icons-google-logo.svg';
 import appleIcon from '../assets/icons-apple-logo.svg';
 import blossomImg from '../assets/blossom-flower.svg';
+import { Input } from "@/components/ui/input";
 
 export default function Login() {
   return (
