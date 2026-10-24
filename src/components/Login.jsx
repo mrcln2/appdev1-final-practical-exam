@@ -18,7 +18,7 @@ export default function Login() {
           <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
             <div className={styles.inputGroup}>
               <label htmlFor="email">Email address</label>
-              <input type="email" id="email" placeholder="Enter your email" />
+              <Input type="email" id="email" placeholder="Enter your email" />
             </div>
 
             <div className={styles.inputGroup}>
@@ -28,7 +28,7 @@ export default function Login() {
                   forgot password
                 </a>
               </div>
-              <input type="password" id="password" placeholder="Name" />
+              <Input type="password" id="password" placeholder="Name" />
             </div>
 
             <div className={styles.checkboxGroup}>
