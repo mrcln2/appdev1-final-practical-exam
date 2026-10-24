@@ -1,4 +1,5 @@
-// src/App.jsx
+import SignUp from './components/SignUp';
+
 export default function App() {
-  return <h1>APPDEV1 Final Project</h1>;
+  return <SignUp />;
 }
